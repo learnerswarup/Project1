@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 1px 1px 4px #00000030;
+}
+
+.collapse {
+  visibility: inherit;
+}
+
+#home {
+  min-height: 200vh;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.App {
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* #page-header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    height: 55px;
+    padding: 0px 14px;
+} */
+
+#app__content {
+  padding: 55px 0px 878px 0px;
+  transform: 0.8s;
+  min-height: 100vh;
+  background-color: #00e7e302;
+}
+
+#page__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 18px 25px 18px 25px;
+  transition: 0.8s;
+}
+
+.mode-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0.7;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: auto;
+}
+
+footer > div {
+  min-width: 100vw;
+}
+
+.about-page {
+  width: 100%;
+  line-height: 1;
+  z-index: 0;
+  color: #2d343e;
+}
+
+#about-header {
+  float: left;
+  width: 100%;
+  height: 50vh;
+  max-height: 40vh;
+  line-height: 1;
+  z-index: 0;
+  color: #2d343e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: bottom 25%;
+}
+
+.about-header-inner {
+  min-height: 18vh;
+  /* max-height: 30vh; */
+  min-width: 210px;
+  margin: 0px 12px 0px 12px;
+  background-color: rgba(255, 255, 255, 0.308);
+  border-radius: 8px;
+}
+
+.join-sticker {
+  background-color: #046ec1;
+  padding: 8px 16px 8px 16px;
+  color: white;
+  height: fit-content;
+  font: bold;
+  width: fit-content;
+  text-align: center;
+  border-radius: 4px;
+  transform: rotate(90deg);
+  position: fixed;
+  right: -12px;
+  top: 280px;
+  z-index: 99999;
+}
+.whatsapp-sticker {
+  padding: 6px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9;
+  right: 8px;
+  bottom: 1.5rem;
+}
+
+.about-heads {
+  margin: auto;
+}
+
+.about-heads ul li {
+  display: inline-block;
+  vertical-align: middle;
+  list-style-type: none;
+  position: relative;
+  font-size: 15px;
+  padding-left: 30px;
+  line-height: 25px;
+  margin-top: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.about-heads ul li:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.about-heads ul li::after {
+  content: "|";
+  font-family: FontAwesome;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 12px;
+  top: 0;
+}
+.about-heads ul li:first-child::after {
+  content: "";
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 22px !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  font-weight: 700 !important;
+}
+
+.accordion__button {
+  background: rgb(125, 227, 195) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(125, 227, 195, 0.7987570028011204) 0%,
+    rgba(157, 231, 208, 0.5494572829131652) 52%,
+    rgba(222, 240, 234, 0.227328431372549) 100%
+  ) !important;
+  font-weight: bold !important;
+}
+
+.accordion__heading {
+  background-color: white !important;
+}
+
+.clb-event-details {
+  background: rgba(191, 239, 95, 0.575);
+  background: linear-gradient(
+    157deg,
+    rgba(199, 240, 116, 0.515) 0%,
+    rgba(72, 219, 219, 0.498) 52%,
+    rgba(85, 72, 228, 0.467) 100%
+  );
+}
+.clb-evnt-card:hover {
+  transition: all 0.2s ease-in-out;
+  /* background: rgba(4, 111, 193, 0.247);
+    background: linear-gradient(90deg, rgba(4, 111, 193, 0.161) 0%, rgba(2, 199, 163, 0.287) 100%); */
+  border: 1px solid rgba(128, 128, 128, 0.408);
+}
+.clb-evnt-card {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.join-us-btn:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out;
+  background-color: #019b7f;
+}
+.join-us-btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.linkedin-logo:hover {
+  fill: #0077b5 !important;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.linkedin-logo {
+  transition: all 0.2s ease-in-out;
+}
